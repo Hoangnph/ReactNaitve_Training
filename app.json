@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Tranning_ReduxToolKit",
+    "slug": "Tranning_ReduxToolKit",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Tranning_ReduxToolKit"
+}
