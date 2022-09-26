@@ -1,28 +1,32 @@
 import styled from "styled-components";
-import {View,Text} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import {View,TouchableOpacity, Text} from 'react-native';
+import {colors} from '../assets';
+import * as Animatable from 'react-native-animatable';
 
-const SafeAreaViewRoot = styled(SafeAreaView)`
+
+// Common styles
+export const SafeAreaViewRoot = styled(SafeAreaView)`
     flex: 1;
     flex-direction: row;
     background-color: #FFFFFF;
 ` 
 // View part
-const ContainerView = styled(View)`
+export const ContainerView = styled(View)`
     flex: 1;
     background-color: #fff;
 `
 
-const HeaderView = styled(View)`  
+export const HeaderView = styled(View)`  
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    height: 60px;
+    height: 64px;
     margin-top: 60px;
 `
 
 // Text part
-const TitleText = styled(Text)`
+export const TitleText = styled(Text)`
     flex: 1;
     text-align: center;
     font-size: 24px;
@@ -31,10 +35,41 @@ const TitleText = styled(Text)`
     color: #000;
 `
 
-// export
-export {
-    SafeAreaViewRoot,
-    ContainerView,
-    TitleText,
-    HeaderView,
-}
+
+// Sytles for Bottom Tab Navigator
+export const TabButtonTouchOpacity = styled(TouchableOpacity)`
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+`
+export const BtnAnimate_Style1 = Animatable.createAnimatableComponent(styled(View)`
+    flex:1;
+    justify-content: center;
+    align-items: center;
+`
+)
+export const BtnAnimate_Style2 = Animatable.createAnimatableComponent(styled(View)`
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    borderRadius: 18px;
+    borderColor: ${colors.white};
+`
+)
+
+export const BtnAnimate_Circle_BG = Animatable.createAnimatableComponent(styled(View)`
+    position: absolute;
+    backgroundColor: ${colors.secondary};
+    borderRadius: 25px;
+`)
+
+export const BtnAnimate_Label_Text = Animatable.createAnimatableComponent(styled(Text)`
+    font-family: SFProDisplay-Regular;
+    font-size: 13px;
+    color: ${colors.secondary};
+    text-align: center;
+`)
+
+export const BtnAnimate_Label_EmptyText = Animatable.createAnimatableComponent(styled(Text)``)

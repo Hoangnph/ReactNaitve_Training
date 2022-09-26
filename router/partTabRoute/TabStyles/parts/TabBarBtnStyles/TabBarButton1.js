@@ -3,7 +3,7 @@ import React from 'react';
 import {
     TabButtonTouchOpacity,
     BtnAnimate_Style1,
-} from '../../style';
+} from '../../../../../@styles';
 import {colors} from '../../../../../assets';
 
 const TabBarButton1 = (props) => {
