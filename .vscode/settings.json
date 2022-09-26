@@ -1,0 +1,24 @@
+{
+    "background.enabled": true,
+    "background.loop": false,
+    "background.useDefault": false,
+    "background.useFront": false,
+    "background.style": {
+          "content": "''",
+          "pointer-events": "none",
+          "position": "absolute",
+          "z-index": "99999",
+          "width": "90%",
+          // "height": "90%",
+          "margin-bottom":"10%",
+          // "margin-right": "5%",
+          "background-position": "center",
+          "background-size": "auto",
+          "background-repeat": "no-repeat",
+          "opacity": 0.15,
+          // "transform": "scale(1)",s
+      },
+    "background.customImages": [
+        "/Users/apple/Project/NextJs/ReactToNextJS/NextJS_Tutorial/.vscode/Buddha_4.gif"
+    ]
+  }
